@@ -6,7 +6,7 @@ const color = document.querySelector('.color')
 btn.addEventListener('click', function() {
     let hexColor = '#'
     for (i = 0; i<6 ; i++) {
-        hexColor += hex[1]
+        hexColor += hex[2]
     }
     color.textContent = hexColor
     document.body.style.backgroundColor = hexColor
