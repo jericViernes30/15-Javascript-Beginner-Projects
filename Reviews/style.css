@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #c7c7c7;
+}
+
+section .title {
+    margin-bottom: 20px;
+}
+
+section .title h2 {
+    color: #333;
+    text-align: center;
+}
+
+section img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 3px -1px 0 0 rgb(69, 189, 229);
+}
+
+section .underline {
+    background-color: rgb(69, 189, 229);
+    width: 50px;
+    height: 2.5px;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+section article .img-container {
+    position: absolute;
+    top: 40px;
+    padding: 10px;
+}
+
+section .review .img-container .quote {
+    background-color: rgb(69, 189, 229);
+    border-radius: 50%;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+section .review .img-container .fa-solid {
+    color: white;
+}
+
+.container .review {
+    width: 400px;
+    height: max-content;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    place-items: center;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 5px 6px 10px 0 rgba(0, 0, 0, 0.3);
+    padding: 20px 20px 10px;
+}
+
+section .review .content h4 {
+    color: #333;
+    margin: 5px 0;
+    text-align: center;
+}
+
+section .review .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section .review .content p {
+    text-align: center;
+    font-size: smaller;
+    width: 380px;
+    color: #333;
+    letter-spacing:.5px;
+}
+
+section .review .content p.job {
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(69, 189, 229);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+section .review .prev-next .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .review .prev-next .buttons button {
+    border: none;
+    margin: 5px 0;
+    color: rgb(69, 189, 229);
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+section .review .prev-next .buttons button:hover{
+    cursor: pointer;
+}
+
+section .review .prev-next .surprise-button button {
+    border: 1px solid rgb(69, 189, 229);
+    padding: 3px 8px;
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(69, 189, 229);
+    background-color: rgb(193, 221, 231);
+    border-radius: 10px;
+}
+
+section .review .prev-next .surprise-button button:hover {
+    background-color: rgb(69, 189, 229);
+    color: white;
+    cursor: pointer;
+    font-weight: 200;
+    letter-spacing: 1px;
+    transition: .4s;
+}
