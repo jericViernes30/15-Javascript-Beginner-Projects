@@ -35,40 +35,42 @@ const surpBtn = document.querySelector('.surprise-btn')
 
 let currentItem = 0
 
-// set starting item
-
-const item = reviews[currentItem] //assigning to item for easier access to property like shown below
-// load initial item\
-window.addEventListener('DOMContentLoaded',() => {
-    showPerson()
+nextBtn.addEventListener('click', () => {
+    currentItem += 1
+    showPerson(currentItem)
 })
 
-function showPerson() {
-    img.src = item.img
-    authorStyle()
-    jobStyle()
-    infoStyle()
-  
-}
+prevBtn.addEventListener('click', () => {
+    currentItem -= 1
+    showPerson(currentItem)
+})
 
-function jobStyle() {
+surpBtn.addEventListener('click', () => {
+    let random = Math.floor(Math.random()*reviews.length)
+    showPerson(random)
+})
+
+
+window.addEventListener('DOMContentLoaded',() => {
+    showPerson(currentItem)
+})
+
+function showPerson(person) {
+    const item = reviews[person] //assigning to item for easier access to property like shown below
+// load initial item\
+    img.src = item.img
     job.textContent = item.job 
     job.style.fontSize = "10px"
     job.style.color = "rgb(69, 189, 229)"
     job.style.textTransform = "uppercase"
     job.style.fontWeight = "bold"
     job.style.textAlign = "center"
-}
-
-function authorStyle() {
     author.textContent = item.name
     author.style.color = "#333"
     author.style.textAlign = "center"
-}
-
-function infoStyle() {
     info.textContent = item.text
     info.style.fontSize = "smaller"
     info.style.letterSpacing = "1px"
     info.style.color = "#333"
 }
+
