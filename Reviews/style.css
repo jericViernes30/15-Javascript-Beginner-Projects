@@ -73,9 +73,7 @@ section .review .img-container .fa-solid {
 }
 
 section .review .content h4 {
-    color: #333;
     margin: 5px 0;
-    text-align: center;
 }
 
 section .review .content {
@@ -94,11 +92,6 @@ section .review .content p {
 }
 
 section .review .content p.job {
-    text-align: center;
-    font-size: 10px;
-    font-weight: bold;
-    color: rgb(69, 189, 229);
-    text-transform: uppercase;
     margin-bottom: 5px;
 }
 
