@@ -37,11 +37,18 @@ let currentItem = 0
 
 nextBtn.addEventListener('click', () => {
     currentItem += 1
+    if(currentItem > reviews.length - 1){
+        currentItem = 0
+    }
     showPerson(currentItem)
+
 })
 
 prevBtn.addEventListener('click', () => {
     currentItem -= 1
+    if(currentItem < reviews.length - 1){
+        currentItem = 0
+    }
     showPerson(currentItem)
 })
 
