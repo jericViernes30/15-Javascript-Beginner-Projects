@@ -69,3 +69,19 @@ header .banner button.btn:hover{
     border: 1px solid rgba(88, 7, 220, 0.315);
     display: none;
 }
+
+.modal-overlay h1 {
+    clear: both;
+    text-align: center;
+    font-size: 25px;
+}
+
+.modal-overlay button.btn-close {
+    border: none;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    color: red;
+}
