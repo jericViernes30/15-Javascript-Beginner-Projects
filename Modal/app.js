@@ -4,7 +4,6 @@ const modal = document.getElementById("modal-overlay")
 
 show.addEventListener('click', () => {
     modal.style.display = "block"
-    modal.style.transition = "1s ease-out"
 })
 
 closeModal.addEventListener('click', () => {
