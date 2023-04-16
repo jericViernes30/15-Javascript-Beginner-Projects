@@ -74,6 +74,7 @@ header .banner button.btn:hover{
     clear: both;
     text-align: center;
     font-size: 25px;
+    color: #222;
 }
 
 .modal-overlay button.btn-close {
@@ -84,4 +85,9 @@ header .banner button.btn:hover{
     float: right;
     font-weight: bold;
     color: red;
+}
+
+.modal-overlay button.btn-close:hover {
+    transform: scale(1.5);
+    transition: .5s ease-out;
 }
